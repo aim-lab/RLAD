@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6accad58-af87-473d-9b56-430ac525108c" name="orion03">
+        <fileTransfer accessType="SFTP" host="132.68.176.127" port="22" sshConfigId="bfd6f67e-ba82-4894-aec6-a68c724ce186" sshConfig="jonathanfh@bm@132.68.176.127:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

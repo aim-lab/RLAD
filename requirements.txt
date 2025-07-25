@@ -1,0 +1,14 @@
+pyyaml
+transformers==4.46.2
+torch #==2.1.1 # rerun with index
+torchvision #==0.16.1 # rerun with index pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu118
+accelerate
+diffusers
+pillow
+h5py
+opencv-python
+peft
+numpy==1.24.0
+scipy
+timm
+clean-fid

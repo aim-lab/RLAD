@@ -1,0 +1,51 @@
+model_class: Models.RLAD.FundusDiT
+resolution: 512 #Image resolution used at inference
+special_bv_res: 2048 #Image resolution for blood vessel segmentation
+root_dir: ../../Databases/ #Root datasets dir
+#Datasets used for training
+train_datasets: [UZLF_TRAIN, GRAPE, MESSIDOR, PAPILA, MAGREB, ENRICH, 1000images,ddr_lesion_train, EYEPACS,G1020,idrid_lesion_train,ODIR_Train]
+val_dataset: [UZLF_VAL] #Dataset used for validation
+test_dataset: [DRTiD] #Dataset used for test
+sampling: proportional_sqrt #Data sampling strategy
+model_pretrained: "facebook/DiT-XL-2-512" #Pretrained DiT from hugging face
+
+##INFERENCE
+load_weights_from: "trained_checkpoints/RLAD/checkpoint-82560/model.safetensors"
+n_gen_per_samples: 3 #Number of sample to generate per conditioning when generating massive amount of data
+CD_cond: True #provide CD conditioning during generation
+L_cond: True #provide Lesion conditioning during generation
+generation_path_save: "../Generated_AV_CD_L/Generated"
+
+
+### All Segmenter pretrained backbone parameters
+seg_resolution: natural
+seg_pad : 1472
+
+bv: #blood vessel
+  seg_model_class: Models.SwinV2.Swinv2Segmenter
+  seg_resolution: natural
+  seg_pad : 1472
+  multilabel: true
+
+  seg_model_pretrained: "microsoft/swinv2-tiny-patch4-window8-256"
+  seg_load_weights_from: "trained_checkpoints/Segmenter/bv/model.safetensors"
+
+od: #cup and disc
+  seg_model_class: Models.SwinV2.Swinv2Segmenter
+  seg_resolution: natural
+  seg_pad: 1472
+  multilabel: true
+
+  seg_model_pretrained: "microsoft/swinv2-tiny-patch4-window8-256"
+  seg_load_weights_from: "trained_checkpoints/Segmenter/od/model.safetensors"
+
+# LESION
+lesion: #lesion
+  seg_model_class: Models.SwinV2.Swinv2Segmenter
+  seg_resolution: natural
+  seg_pad: 1472
+  multilabel: true
+
+  seg_model_pretrained: "microsoft/swinv2-tiny-patch4-window8-256"
+  seg_load_weights_from: "trained_checkpoints/Segmenter/lesion/model.safetensors"
+
