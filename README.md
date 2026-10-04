@@ -4,6 +4,13 @@
 <h1 align="center">
   <br>
 Enhancing Retinal Vessel Segmentation Generalization via Layout-Aware Generative Modelling</h1>
+<div align="center">
+
+Jonathan Fhima &nbsp;•&nbsp; Jan Van Eijgen &nbsp;•&nbsp; Lennert Beeckmans &nbsp;•&nbsp; Thomas Jacob &nbsp;•&nbsp; Moti Freiman
+<br>
+Luis Filipe Nakayama &nbsp;•&nbsp; Ingeborg Stalmans &nbsp;•&nbsp; Chaim Baskin &nbsp;•&nbsp; Joachim A. Behar
+
+</div>
 
 ![Alt Text](figures/LAPG.png)
 
