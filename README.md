@@ -3,14 +3,14 @@
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-REYIA-yellow)](https://huggingface.co/datasets/JonathanFhima/REYIA)
 <h1 align="center">
   <br>
-Enhancing Retinal Vessel Segmentation Generalization via Layout-Aware Generative Modelling
+Enhancing Retinal Vessel Segmentation Generalization via Layout-Aware Generative Modelling</h1>
 
 <div align="center">
 Jonathan Fhima &nbsp;•&nbsp; Jan Van Eijgen &nbsp;•&nbsp; Lennert Beeckmans &nbsp;•&nbsp; Thomas Jacob &nbsp;•&nbsp; Moti Freiman
 <br>
 Luis Filipe Nakayama &nbsp;•&nbsp; Ingeborg Stalmans &nbsp;•&nbsp; Chaim Baskin &nbsp;•&nbsp; Joachim A. Behar
 </div>
-</h1>
+
 ![Alt Text](figures/LAPG.png)
 
 ## Installation
