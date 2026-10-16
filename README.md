@@ -1,6 +1,8 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2503.01190-red)](https://arxiv.org/abs/2503.01190)
 [![GitHub](https://img.shields.io/badge/github-RLAD-lightgrey)](https://github.com/aim-lab/RLAD)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-REYIA-yellow)](https://huggingface.co/datasets/JonathanFhima/REYIA)
+[![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-RLAD-SwinV2-Large-yellow)]([https://huggingface.co/datasets/JonathanFhima/REYIA](https://huggingface.co/JonathanFhima/RLAD-SwinV2-Large))
+
 <h1 align="center">
   <br>
 Enhancing Retinal Vessel Segmentation Generalization via Layout-Aware Generative Modelling</h1>
