@@ -2,6 +2,7 @@
 [![GitHub](https://img.shields.io/badge/github-RLAD-lightgrey)](https://github.com/aim-lab/RLAD)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-REYIA-yellow)](https://huggingface.co/datasets/JonathanFhima/REYIA)
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-RLAD--SwinV2--Large-yellow)](https://huggingface.co/JonathanFhima/RLAD-SwinV2-Large)
+[![RLAD + PVBM Tutorial](https://img.shields.io/badge/RLAD_%2B_PVBM_tutorial-Colab-orange)](https://colab.research.google.com/github/aim-lab/PVBM/blob/main/rlad_pvbm_tutorial.ipynb)
 
 <h1 align="center">
   <br>
@@ -14,6 +15,11 @@ Luis Filipe Nakayama &nbsp;•&nbsp; Ingeborg Stalmans &nbsp;•&nbsp; Chaim Bas
 </div>
 
 ![Alt Text](figures/LAPG.png)
+
+This repo is for reproducing RLAD's data generation and training pipeline. To just segment
+a fundus image, use the trained [RLAD-SwinV2-Large](https://huggingface.co/JonathanFhima/RLAD-SwinV2-Large)
+model, or the [RLAD + PVBM end-to-end tutorial](https://colab.research.google.com/github/aim-lab/PVBM/blob/main/rlad_pvbm_tutorial.ipynb)
+for a full pipeline from a raw fundus image to vasculature biomarkers.
 
 ## Installation
 
